@@ -12,9 +12,9 @@ const xs = tf.tensor2d([1, 2, 3, 4], [4, 1]);
 const ys = tf.tensor2d([1, 3, 5, 7], [4, 1]);
 
 // Train the model using the data.
-model.fit(xs, ys).then(() => {
+(async ()=>{
+  await model.fit(xs, ys);
   // Use the model to do inference on a data point the model hasn't seen before:
   // Open the browser devtools to see the output
   model.predict(tf.tensor2d([5], [1, 1])).print();
-});
-      
+})();
