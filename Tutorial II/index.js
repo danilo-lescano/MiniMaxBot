@@ -21,6 +21,6 @@ manager.addAnswer('pt', 'greetings.hello', 'saudacoes!');
 (async() => {
     await manager.train();
     manager.save();
-    const response = await manager.process('en', 'eu tenho que ir');
+    const response = await manager.process('pt', 'eu tenho que ir');
     console.log(response);
 })();
