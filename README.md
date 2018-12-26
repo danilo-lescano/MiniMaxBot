@@ -1,4 +1,7 @@
 # MiniMaxBot
+TRABALHO DESCONTINUADO
+
+
 Bot para trabalho da universidade (2018-2)
 
 
